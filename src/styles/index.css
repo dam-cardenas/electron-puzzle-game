@@ -1,13 +1,23 @@
-@import url('./components/input.css');
+@import url('./components/hero.css');
+@import url('./components/menu.css');
+@import url('./components/controls.css');
+@font-face {
+  font-family: Main;
+  src: url('./../assets/PressStart2P-Regular.ttf');
+}
 
 * {
   margin: 0;
   padding: 0;
+  color: black;
+  text-shadow: 3px 3px 1px rgba(61, 232, 255, 0.5),-2px 2px 1px rgba(255, 71, 181, 0.514);
+  user-select: none;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-    Arial, sans-serif;
+  font-family: Main;
+  background-color: #E8E2E2;
+  border-radius: 10px;
 }
 
 

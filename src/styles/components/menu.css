@@ -1,0 +1,34 @@
+.menu {
+  display: grid;
+  grid-auto-flow: row;
+  width: max-content;
+  height: max-content;
+  width: 40%;
+  margin: auto 20%;
+  text-align: center;
+  gap: 1em;
+  margin-top: 3em;
+}
+
+.menu .menu-item {
+  display: grid;
+  grid-template-areas: "icon option";
+  grid-template-columns: 1fr 100fr;
+  font-size: 24px;
+}
+
+.menu-item:hover span::before {
+  content: '→';
+}
+
+.menu .menu-item span {
+  grid-area: icon;
+  width: 1em;
+  text-align: left; 
+}
+.menu .menu-item a {
+  grid-area: option;
+  text-align: center;
+}
+
+.menu .menu-item a { text-decoration: none; }

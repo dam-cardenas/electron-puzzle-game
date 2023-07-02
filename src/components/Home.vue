@@ -1,32 +1,31 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 
+const selectedOption = ref(0)
+
 const menuOptions = [
   { text: 'Start', route: '', icon:'' },
-  { text: 'About', route: '', icon:'' }
+  { text: 'Controls', route: '', icon:'' },
+  { text: 'Credits', route: '', icon:'' },
+  { text: 'Exit', route: '', icon:'' },
 ]
-const width = ref(3)
-const height = ref(3)
+
 
 </script>
 
 <template>
-  <div class="input">
-    <label for="width">
-      width
-    </label>
-    <input type="number" id="width" v-model="width">
-  </div>
-  <div class="input">
-    <label for="height">
-      height
-    </label>
-    <input type="number" id="height" v-model="height">
-  </div>
-  <ul>
-    <li v-for="option in menuOptions">
-      <span>{{ option.icon  }}</span>
-      <router-link :to="option.route"> {{ option.text }} </router-link>
-    </li>
-  </ul>
+  <section class="controls">
+    <!-- controls goes here -->
+  </section>
+  <section class="hero">
+    PZZL
+  </section>
+  <section class="content">
+    <ul class="menu">
+      <li class="menu-item"  v-for="(option, index) in menuOptions">
+        <span></span>
+        <router-link :to="option.route"> {{ option.text }} </router-link>
+      </li>
+    </ul>
+  </section>
 </template>
