@@ -21,5 +21,18 @@
         <div class="key inline">→</div>
       </div>
     </article>
+    <article class="center">
+      <p>Or:</p>
+    </article>
+    <article>
+      <div class="fit-content center">
+        <div class="key">W</div>
+      </div>
+      <div class="fit-content center mt5">
+        <div class="key inline">A</div>
+        <div class="key inline">S</div>
+        <div class="key inline">D</div>
+      </div>
+    </article>
   </section>
 </template>

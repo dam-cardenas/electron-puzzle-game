@@ -4,12 +4,16 @@ import { ref, onMounted } from 'vue'
 const selectedOption = ref(0)
 
 const menuOptions = [
-  { text: 'Start', route: '', icon:'' },
+  { text: 'Start', route: '/game', icon:'' },
   { text: 'Controls', route: '/controls', icon:'' },
-  { text: 'Credits', route: '', icon:'' },
+  // { text: 'Credits', route: '', icon:'' },
   { text: 'Exit', route: '', icon:'' },
 ]
 
+onMounted(() => {
+  const exitOption = document.getElementById('Exit')
+  exitOption.addEventListener('click', window.electron.closeApp)
+})
 
 </script>
 
@@ -24,7 +28,7 @@ const menuOptions = [
     <ul class="menu">
       <li class="menu-item"  v-for="(option, index) in menuOptions">
         <span></span>
-        <router-link :to="option.route"> {{ option.text }} </router-link>
+        <router-link  :id="option.text" :to="option.route"> {{ option.text }} </router-link>
       </li>
     </ul>
   </section>

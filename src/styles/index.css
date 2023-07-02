@@ -3,6 +3,7 @@
 @import url('./components/controls.css');
 @import url('./components/instructions.css');
 @import url('./components/keys.css');
+@import url('./components/board.css');
 @font-face {
   font-family: Main;
   src: url('./../assets/PressStart2P-Regular.ttf');
@@ -18,8 +19,10 @@
 
 body {
   font-family: Main;
+  width: 400px; 
+  height: 600px;
   background-color: #E8E2E2;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .inline  {

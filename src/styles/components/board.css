@@ -1,0 +1,20 @@
+.board {
+  display: grid;
+  grid-template-areas: "key key key"
+  "key key key"
+  "key key key";
+  gap: 5px
+}
+
+.board .key {
+  font-size: 36px;
+  padding: 0.75em;
+}
+
+.board .key[data-cursor="true"] span {
+  color: #FDFCFC;
+  text-transform: uppercase;
+}
+.board .key[data-cursor="true"] {
+  background-color: rgb(0, 0, 0);
+}
