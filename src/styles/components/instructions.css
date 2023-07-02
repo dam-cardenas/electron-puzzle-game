@@ -1,0 +1,8 @@
+.instructions {
+  display: grid;
+  gap: 1em;
+  grid-auto-flow: row;
+  width: 80%;
+  margin: 0 auto;
+}
+

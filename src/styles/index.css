@@ -1,6 +1,8 @@
 @import url('./components/hero.css');
 @import url('./components/menu.css');
 @import url('./components/controls.css');
+@import url('./components/instructions.css');
+@import url('./components/keys.css');
 @font-face {
   font-family: Main;
   src: url('./../assets/PressStart2P-Regular.ttf');
@@ -20,4 +22,19 @@ body {
   border-radius: 10px;
 }
 
+.inline  {
+  display: inline-block;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.fit-content {
+  width: fit-content;
+}
+
+.mt5 { margin-top: 5px; }
+.mt10 { margin-top: 10px; }
+.mt15 { margin-top: 15px; }
 

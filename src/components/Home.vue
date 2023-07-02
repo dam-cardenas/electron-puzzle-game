@@ -5,7 +5,7 @@ const selectedOption = ref(0)
 
 const menuOptions = [
   { text: 'Start', route: '', icon:'' },
-  { text: 'Controls', route: '', icon:'' },
+  { text: 'Controls', route: '/controls', icon:'' },
   { text: 'Credits', route: '', icon:'' },
   { text: 'Exit', route: '', icon:'' },
 ]

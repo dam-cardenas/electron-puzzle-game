@@ -1,0 +1,13 @@
+.key {
+  padding: 1em;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #FDFCFC ;
+  box-shadow: 3px 3px 1px rgba(61, 232, 255, 0.5),
+    -2px 2px 1px rgba(255, 71, 181, 0.514);
+  transition: all ease-in-out 200ms;
+}
+
+.key:hover {
+  background-color: #cecece ;
+}
