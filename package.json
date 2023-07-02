@@ -13,7 +13,7 @@
   },
   "keywords": [],
   "author": {
-    "name": "Damian Cardenas",
+    "name": "Daqaros",
     "email": "damian.cardenas.developer@gmail.com"
   },
   "license": "MIT",
@@ -25,9 +25,13 @@
     "@electron-forge/maker-zip": "^6.2.1",
     "@electron-forge/plugin-auto-unpack-natives": "^6.2.1",
     "@electron-forge/plugin-vite": "^6.2.1",
+    "@vitejs/plugin-vue": "^4.2.3",
     "electron": "25.2.0"
   },
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.0"
+    "electron-squirrel-startup": "^1.0.0",
+    "puzzler": "file:../puzzler",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.2"
   }
 }

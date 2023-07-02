@@ -17,7 +17,7 @@
  * ```
  *  // Create the browser window.
  *  mainWindow = new BrowserWindow({
- *    width: 800,
+ *    width: 800, 
  *    height: 600,
  *    webPreferences: {
  *      nodeIntegration: true
@@ -26,6 +26,9 @@
  * ```
  */
 
-import './index.css';
-
-console.log('👋 This message is being logged by "renderer.js", included via Vite');
+import './styles/index.css';
+import { createApp } from 'vue';
+import { router } from './routes';
+const app = createApp({})
+app.use(router)
+app.mount('#app')
