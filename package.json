@@ -1,8 +1,8 @@
 {
-  "name": "puzzlerdesktop",
-  "productName": "Puzzler",
+  "name": "test-electron-puzzle-game",
+  "productName": "PZZL",
   "version": "1.0.0",
-  "description": "A Puzzle game made with electron",
+  "description": "A slide Puzzle game made with electron",
   "main": ".vite/build/main.js",
   "scripts": {
     "start": "electron-forge start",
@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0",
-    "puzzler": "file:../puzzler",
+    "slide-puzzle-engine": "^1.0.8",
     "vue": "^3.3.4",
     "vue-router": "^4.2.2"
   }

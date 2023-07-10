@@ -1,4 +1,5 @@
 <script setup>
+import { Board, Direction } from 'slide-puzzle-engine';
 import {
   computed,
   ref,
@@ -7,7 +8,6 @@ import {
   watch,
   reactive
 } from 'vue'
-import { Board, Direction } from 'puzzler';
 
 let time = ref(0)
 let timeTracker = null
@@ -17,8 +17,6 @@ let gameBoard = reactive(new Board({
     height: 3,
   }
 }))
-
-const movements = ref(0)
 
 const timerSeconds = computed(() => {
   const seconds = time.value % 60
@@ -58,10 +56,8 @@ const puzzleInput = (event) => {
       gameBoard.move([Direction.right])
       break;
   }
-  console.log(board.value)
 }
 onMounted(() => {
-  console.log(board.value)
   document.addEventListener('keyup', puzzleInput)
   timeTracker = setInterval(() => {
     time.value += 1
